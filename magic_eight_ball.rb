@@ -10,7 +10,9 @@ def opening_menu
   puts "\n What is your question? or type QUIT to end program."
   user_input = gets.chomp.upcase
 
-  if user_input = 'QUIT'
+  if user_input == 'QUIT'
+    puts "Thank you for playing!"
+    puts "Good-bye!!"
     exit
   else
     answer
@@ -18,7 +20,20 @@ def opening_menu
 end
 
 def answer
-  puts "Your answer here"
+  available_answers = [
+    "Not Likely",
+    "Unfortunately",
+    "Most Definitly",
+    "Why not?",
+    "You're up in the night",
+    "I don't have an opinion on that",
+    "Not in a million years!",
+    "You wish",
+    "Sure",
+    "Certainly!"
+  ]
+  puts "The Magic Eight Ball says:"
+  puts available_answers.sample
 end
 
 while keep_looping == true
