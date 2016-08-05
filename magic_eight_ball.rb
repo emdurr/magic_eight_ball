@@ -79,3 +79,12 @@ end
 while keep_looping == true
   opening_menu
 end
+
+# script arguments
+#eight = MagicEightBall.new#
+
+#first_arg = ARGV[0].strip if ARGV[0]
+#ARGV.clear#
+
+#eight.add_answers if first_arg == add_answers
+#eight.reset_answers if first_arg == reset_answers
